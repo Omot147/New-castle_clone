@@ -9,10 +9,10 @@
 <body>
     <header class="text-gray-400 bg-[#000000] body-font border-b-1">
         <div class="container mx-auto flex flex-wrap px-14 py-5 flex-col md:flex-row items-center max-sm:relative">
-          <a href="#" class="max-sm:absolute max-sm:top-8 max-sm:left-10 lg:hidden md:none" onclick="toggleVisibility()"><img src="images/icons8-menu-bar-50.png" width="20" height="20"></a>
-          <aside class="w-64 bg-white shadow-lg flex-shrink-0 lg:hidden md:hiden max-sm:none max-sm:absolute max-sm:top-0 max-sm:z-1 max-sm:left-0 max-sm:h-[100vh]" id="myHiddenText">
+          <a href="#" class="max-sm:absolute max-sm:top-8 max-sm:left-10 lg:hidden md:hidden" onclick="toggleVisibility()"><img src="images/icons8-menu-bar-50.png" width="20" height="20"></a>
+          <aside class="w-64 bg-white shadow-lg flex-shrink-0 lg:hidden md:hidden max-sm:none max-sm:absolute max-sm:top-0 max-sm:z-1 max-sm:left-0 max-sm:h-[100vh]" id="myHiddenText">
             <div class="p-4 text-xl font-semibold text-gray-800 border-b">
-                Mercedes-Benz <a href="#" class="max-sm:absolute max-sm:top-6 max-sm:left-54 lg:hidden md:none" onclick="toggleDisplay()"><img src="images/icons8-cancel-50.png" width="20" height="20"></a>
+                Mercedes-Benz <a href="#" class="max-sm:absolute max-sm:top-6 max-sm:left-54 lg:hidden md:hidden" onclick="toggleDisplay()"><img src="images/icons8-cancel-50.png" width="20" height="20"></a>
             </div>
             <nav class="p-4 border-b">
                 <ul class="space-y-2">
@@ -62,11 +62,11 @@
         <div class="container  flex px-14 py-24 md:flex-row flex-col items-center w-full  h-[100vh] absolute inset-0 bg-gradient-to-r from-black/98 to-transparent">
           <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center w-full h-[100vh]">
             <div class="flex items-center py-[2rem]">
-              <div class="text-[14px] text-white text-center font-semibold text-3xl brightness-100">Mercedes-Benz<br>Newcastle</div>
+              <div class="text-[14px] text-white text-center font-semibold text-3xl brightness-100 max-sm:text-xl">Mercedes-Benz<br>Newcastle</div>
               <div class="h-12 w-[2px] bg-gray-300 mx-4"></div>
               <img src="images/64px-Mercedes-Logo.svg.png" width="45px" height="45px">
             </div>            
-            <h1 class="title-font sm:text-4xl text-5xl mb-4 text-white py-14 leading-[1em] max-sm:text-2xl max-sm:py-20">Welcome To <br class="hidden lg:inline-block">Mercedes -Benz<br>Newcastle.
+            <h1 class="title-font sm:text-4xl text-5xl mb-4 text-white py-14 leading-[1em] max-sm:text-xl max-sm:py-20">Welcome To <br class="hidden lg:inline-block">Mercedes -Benz<br>Newcastle.
             </h1>
             <div class="flex justify-center max-sm:block max-sm:w-full">
               <button class=" text-center max-sm:w-full text-white  bg-transparent border-1 duration-0.9s  py-3 px-8 focus:outline-none hover:bg-[#9da1a6] hover:border-[#696969] hover:text-white hover:text-gray-600 rounded text-lg font-semibold">Contact Us</button>
@@ -91,8 +91,9 @@
                   <path d="M7 1L1 7L7 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg>
               </button>
-              <div class="p-4 md:w-1/3 relative flex flex-shrink-0 w-full sm:w-auto duration-[0.5s] ease transform w-[600%]" id="image-wrapper">
-                <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+
+              <div class="p-4 md:w-1/3 relative flex flex-shrink-0 w-full sm:w-auto">
+                <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden w-[300]">
                   <img class="lg:h-48 md:h-36 w-full object-cover object-top " src="images\1763613676020.webp" alt="blog">
                   <div class="p-6">
                     <h2 class="tracking-widest text-xl title-font font-bold  text-black mb-4">Summer Service at Mercedes-Benz Newcastle.</h2>
@@ -102,15 +103,16 @@
                         *Terms and conditions apply. Offer excludes any repair work required. Available for Mercedes-Benz vehicles only and exclusively at Mercedes-Benz Newcastle.
                         </p>
                     </div>
-                    <div class="flex justify-center max-sm:block max-sm:w-full mt-12">
-                      <button class=" ml-4 inline-flex  text-white max-sm:mt-4  max-sm:ml-0 bg-[#0078d6] border-0 py-3 px-8 focus:outline-none hover:bg-[#368cf7] rounded text-lg font-semibold">Book Now</button>
+                    <div class="flex justify-center max-sm:block max-sm:w-full mt-12 ">
+                      <button class="w-full text-center text-white max-sm:mt-4  max-sm:ml-0 bg-[#0078d6] border-0 py-3 px-8 focus:outline-none hover:bg-[#368cf7] text-lg font-semibold">Book Now</button>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="p-4 md:w-1/3 relative flex flex-shrink-0 w-full sm:w-auto duration-[0.5s] ease transform w-[600%]" id="image-wrapper"">
+              
+              <div class="p-4 md:w-1/3 relative flex flex-shrink-0 w-full sm:w-auto">
                 <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                  <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="images\1763681354098.webp" alt="blog">
+                  <img class="lg:h-48 md:h-36 w-full object-cover object-top " src="images/1763681354098.webp" alt="blog">
                   <div class="p-6">
                     <h2 class="tracking-widest text-xl title-font font-bold  text-black mb-4">Your dream Mercedes-Benz is waiting for you.</h2>
                     <p class="leading-relaxed mb-3 text-[17px] font-medium text-black py-3">At Mercedes-Benz Newcastle, we are committed to sourcing your dream Mercedes-Benz. </p>
@@ -119,15 +121,15 @@
                         With access to nationwide stock holding, we can explore over 2000 new vehicles across Australia and secure the right vehicle for you.
                         </p>
                     </div>
-                    <div class="flex justify-center max-sm:block max-sm:w-full mt-4">
-                      <button class=" ml-4 inline-flex  text-white max-sm:mt-4  max-sm:ml-0 bg-[#0078d6] border-0 py-3 px-8 focus:outline-none hover:bg-[#368cf7] rounded text-lg font-semibold">Browse Demonstrators</button>
+                    <div class="flex justify-center max-sm:block max-sm:w-full mt-13">
+                      <button class="w-full text-center text-white max-sm:mt-4  max-sm:ml-0 bg-[#0078d6] border-0 py-3 px-8 focus:outline-none hover:bg-[#368cf7] text-lg font-semibold">Browse Demonstrators</button>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="p-4 md:w-1/3 relative flex flex-shrink-0 w-full sm:w-auto duration-[0.5s] ease transform w-[600%]" id="image-wrapper"">
+              <div class="p-4 md:w-1/3 relative flex flex-shrink-0 w-full sm:w-auto ">
                 <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                  <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="images\1763682498836.webp" alt="blog">
+                  <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="images\1763681354098.webp" alt="blog">
                   <div class="p-6">
                     <h2 class="tracking-widest text-xl title-font font-bold  text-black mb-4">Start your Mercedes-Benz purchase online.</h2>
                     <p class="leading-relaxed mb-3 text-[17px] font-medium text-black py-3">Begin your Mercedes-Benz ownership experience by purchasing your next vehicle online.</p>
@@ -136,59 +138,28 @@
                         Speak with the team at Mercedes-Benz Newcastle.
                         </p>
                     </div>
-                    <div class="flex justify-center max-sm:block max-sm:w-full mt-18">
-                      <button class=" ml-4 inline-flex  text-white max-sm:mt-4  max-sm:ml-0 bg-[#0078d6] border-0 py-3 px-8 focus:outline-none hover:bg-[#368cf7] rounded text-lg font-semibold">Explore Available Vehicles</button>
+                    <div class="flex justify-center max-sm:block max-sm:w-full mt-26">
+                      <button class=" w-full text-center text-white max-sm:mt-4  max-sm:ml-0 bg-[#0078d6] border-0 py-3 px-8 focus:outline-none hover:bg-[#368cf7] text-lg font-semibold">Explore available vehicles</button>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="p-4 md:w-1/3 relative flex flex-shrink-0 w-full sm:w-auto duration-[0.5s] ease transform w-[600%]" id="image-wrapper"">
+        
+      
+
+              <div class="p-4 md:w-1/3 relative flex flex-shrink-0 w-full sm:w-auto ">
                 <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                  <img class="lg:h-48 md:h-36 w-full object-cover object-top " src="images\1763613676020.webp" alt="blog">
+                  <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="images/1764899793612.webp" alt="blog">
                   <div class="p-6">
-                    <h2 class="tracking-widest text-xl title-font font-bold  text-black mb-4">Summer Service at Mercedes-Benz Newcastle.</h2>
-                    <p class="leading-relaxed mb-3 text-[17px] font-medium text-black py-3">This holiday season, take the opportunity for a complimentary Vehicle Health Check.</p>
+                    <h2 class="tracking-widest text-xl title-font font-bold  text-black mb-4">Electric by Merecedes-Benz.</h2>
+                    <p class="leading-relaxed mb-3 text-[17px] font-medium text-black py-3">Arriving at Mercedes-Benz Newcastle in January 2026.</p>
                     <div class="flex items-center flex-wrap ">
                       <p class="inline-flex items-center md:mb-2 lg:mb-0 leading-relaxed text-[17px] font-medium text-black py-5">
-                        *Terms and conditions apply. Offer excludes any repair work required. Available for Mercedes-Benz vehicles only and exclusively at Mercedes-Benz Newcastle.
+                        Speak with the team today.
                         </p>
                     </div>
-                    <div class="flex justify-center max-sm:block max-sm:w-full mt-12">
-                      <button class=" ml-4 inline-flex  text-white max-sm:mt-4  max-sm:ml-0 bg-[#0078d6] border-0 py-3 px-8 focus:outline-none hover:bg-[#368cf7] rounded text-lg font-semibold">Book Now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="p-4 md:w-1/3 relative flex flex-shrink-0 w-full sm:w-auto duration-[0.5s] ease transform w-[600%]" id="image-wrapper"">
-                <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                  <img class="lg:h-48 md:h-36 w-full object-cover object-top " src="images\1763613676020.webp" alt="blog">
-                  <div class="p-6">
-                    <h2 class="tracking-widest text-xl title-font font-bold  text-black mb-4">Summer Service at Mercedes-Benz Newcastle.</h2>
-                    <p class="leading-relaxed mb-3 text-[17px] font-medium text-black py-3">This holiday season, take the opportunity for a complimentary Vehicle Health Check.</p>
-                    <div class="flex items-center flex-wrap ">
-                      <p class="inline-flex items-center md:mb-2 lg:mb-0 leading-relaxed text-[17px] font-medium text-black py-5">
-                        *Terms and conditions apply. Offer excludes any repair work required. Available for Mercedes-Benz vehicles only and exclusively at Mercedes-Benz Newcastle.
-                        </p>
-                    </div>
-                    <div class="flex justify-center max-sm:block max-sm:w-full mt-12">
-                      <button class=" ml-4 inline-flex  text-white max-sm:mt-4  max-sm:ml-0 bg-[#0078d6] border-0 py-3 px-8 focus:outline-none hover:bg-[#368cf7] rounded text-lg font-semibold">Book Now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="p-4 md:w-1/3 relative flex flex-shrink-0 w-full sm:w-auto duration-[0.5s] ease transform w-[600%]" id="image-wrapper"">
-                <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                  <img class="lg:h-48 md:h-36 w-full object-cover object-top " src="images\1763613676020.webp" alt="blog">
-                  <div class="p-6">
-                    <h2 class="tracking-widest text-xl title-font font-bold  text-black mb-4">Summer Service at Mercedes-Benz Newcastle.</h2>
-                    <p class="leading-relaxed mb-3 text-[17px] font-medium text-black py-3">This holiday season, take the opportunity for a complimentary Vehicle Health Check.</p>
-                    <div class="flex items-center flex-wrap ">
-                      <p class="inline-flex items-center md:mb-2 lg:mb-0 leading-relaxed text-[17px] font-medium text-black py-5">
-                        *Terms and conditions apply. Offer excludes any repair work required. Available for Mercedes-Benz vehicles only and exclusively at Mercedes-Benz Newcastle.
-                        </p>
-                    </div>
-                    <div class="flex justify-center max-sm:block max-sm:w-full mt-12">
-                      <button class=" ml-4 inline-flex  text-white max-sm:mt-4  max-sm:ml-0 bg-[#0078d6] border-0 py-3 px-8 focus:outline-none hover:bg-[#368cf7] rounded text-lg font-semibold">Book Now</button>
+                    <div class="flex justify-center max-sm:block max-sm:w-full mt-28">
+                      <button class="w-full text-center text-white max-sm:mt-4  max-sm:ml-0 bg-[#0078d6] border-0 py-3 px-8 focus:outline-none hover:bg-[#368cf7] text-lg font-semibold">Contact us</button>
                     </div>
                   </div>
                 </div>
@@ -341,7 +312,7 @@
         <img class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center scale-100 hover:scale-105 transition duration-300" src="images/1763613676020.webp">
         <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
           <p class="text-sm title-font text-gray-500 tracking-widest">Exclusive to Mercedes-Benz Newcastle</p>
-          <h1 class="leading-relaxed text-black text-4xl title-font mt-6">Summer Service at <br>Mercedes-Benz Newcastle</h1>
+          <h1 class="leading-relaxed text-black text-4xl title-font mt-6 max-sm:text-xl">Summer Service at <br>Mercedes-Benz Newcastle</h1>
           <p class="leading-relaxed mt-6">This holiday season, take the opportunity for a complimentary Vehicle Health Check. </p>
           <div class="flex mt-4">
             <button class="flex mt-8 text-white border-0 py-4 px-8 focus:outline-none bg-[#0078d6] hover:bg-[#368cf7]">Book Online</button>
@@ -356,9 +327,9 @@
       <div class="lg:w-4/5 mx-auto flex flex-wrap">
         <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 lg:mt-0 ">
           <p class="text-sm title-font text-gray-500 tracking-widest">Exclusive to Mercedes-Benz Newcastle</p>
-          <h1 class="leading-relaxed text-black text-4xl title-font mt-6">Your dream Mercedes-Benz <br>is waiting for you.</h1>
+          <h1 class="leading-relaxed text-black text-4xl title-font mt-6 max-sm:text-xl">Your dream Mercedes-Benz <br>is waiting for you.</h1>
           <p class="leading-relaxed mt-6">At Mercedes-Benz Newcastle, we are committed to sourcing your dream Mercedes-Benz. With access to nationwide stock holding, we can explore over 2000 new vehicles across Australia and secure the right vehicle for you.</p>
-          <div class="flex mt-4">
+          <div class="flex mt-4 max-sm:mb-6">
             <button class="flex mt-8 text-white border-0 py-4 px-8 focus:outline-none bg-[#0078d6] hover:bg-[#368cf7]">Enquire Now</button>
           </div>
         </div>
@@ -373,7 +344,7 @@
         <img class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center scale-100 hover:scale-105 transition duration-300" src="images/1764899793612.webp">
         <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
           <p class="text-sm title-font text-gray-500 tracking-widest">Exclusive to Mercedes-Benz Newcastle</p>
-          <h1 class="leading-relaxed text-black text-4xl title-font mt-6">Electric by Mercedes-Benz.</h1>
+          <h1 class="leading-relaxed text-black text-4xl title-font mt-6 max-sm:text-xl">Electric by Mercedes-Benz.</h1>
           <p class="leading-relaxed mt-6">Arriving at Mercedes-Benz Newcastle in January 2026.</p>
           <p class="leading-relaxed mt-6">Speak with the team today.</p>
           <div class="flex mt-4">
@@ -389,7 +360,7 @@
         <img class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center scale-100 hover:scale-105 transition duration-300" src="images/1739906577109.webp">
         <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
           <p class="text-sm title-font text-gray-500 tracking-widest">Certified Pre-Owned</p>
-          <h1 class="leading-relaxed text-black text-4xl title-font mt-6">Certified Pre-Owned <br>Vehicles.
+          <h1 class="leading-relaxed text-black text-4xl title-font mt-6 max-sm:text-xl">Certified Pre-Owned <br>Vehicles.
             <br>Feels like new again.</h1>
           <p class="leading-relaxed mt-6">Excellent craftsmanship. Exceptional quality. Luxury design. Experience everything you’d expect from a Mercedes-Benz with Certified Pre-Owned.</p>
           <p class="leading-relaxed mt-6">With extensive certifications including comprehensive service history and 100 point safety check, you can be sure a Certified Pre-Owned is a vehicle up to our standards, giving you that extra feeling of confidence unique to owning a Mercedes-Benz.</p>
@@ -405,9 +376,9 @@
       <div class="lg:w-4/5 mx-auto flex flex-wrap">
         <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 lg:mt-0 ">
           <p class="text-sm title-font text-gray-500 tracking-widest">Collection & Accessories</p>
-          <h1 class="leading-relaxed text-black text-4xl title-font mt-7">Mercedes-Benz Genuine <br>Collection.</h1>
+          <h1 class="leading-relaxed text-black text-4xl title-font mt-7 max-sm:text-xl">Mercedes-Benz Genuine <br>Collection.</h1>
           <p class="leading-relaxed mt-7">Quality and design under the sign of the star. Made with passion and attention to detail, the Mercedes-Benz Genuine Collection captures the allure of the Mercedes-Benz brand. The Mercedes-Benz Genuine Collection features an extensive product range to accompany you around the clock including watches, accessories, fashion, travel and gift ideas.</p>
-          <div class="flex mt-6">
+          <div class="flex mt-6 max-sm:mb-6">
             <button class="flex mt-8 text-white border-0 py-4 px-8 focus:outline-none bg-[#0078d6] hover:bg-[#368cf7]">Shop online</button>
           </div>
         </div>
@@ -422,7 +393,7 @@
         <img class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center scale-100 hover:scale-105 transition duration-300" src="images/1739906576742.webp">
         <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
           <p class="text-sm title-font text-gray-500 tracking-widest">Genuine Parts</p>
-          <h1 class="leading-relaxed text-black text-4xl title-font mt-6">Keep your investment at its <br> best.</h1>
+          <h1 class="leading-relaxed text-black text-4xl title-font mt-6 max-sm:text-xl">Keep your investment at its <br> best.</h1>
           <p class="leading-relaxed mt-6">Mercedes-Benz Genuine Parts are subject to the same exacting standards as the vehicles that leave our factory. With our manufacturing expertise, you can be sure your vehicle will maintain all of the outstanding aspects, from its quality and safety to its dependability.</p>
           <div class="flex mt-4">
             <button class="flex mt-8 text-white border-0 py-4 px-8 focus:outline-none bg-[#0078d6] hover:bg-[#368cf7]">Learn more</button>
@@ -451,7 +422,7 @@
           <div class="h-full overflow-hidden w-full">
             <img class="lg:h-70 md:h-36 w-full object-cover object-top scale-100 hover:scale-105 transition duration-300" src="images/woman.jpg">
             <div class="mt-6">
-              <h1 class="tracking-widest text-2xl title-font text-black mb-2">Innovation, made effortless</h1>
+              <h1 class="tracking-widest text-2xl title-font text-black mb-2 max-sm:text-xl">Innovation, made effortless</h1>
               <p class="leading-relaxed text-[15px] font-medium text-black py-3">Connect your Mercedes-Benz with your lifestyle for effortless, <br>refined drives. Elevate your experience with 15%[2] off the Digital <br>Extras Excellence Package.</p>
               <div class=" max-sm:block max-sm:w-full mt-8">
                 <button class="px-8 py-3 text-center  text-black max-sm:mt-4  max-sm:ml-0  border-1 border-gray-400 focus:outline-none text-lg font-semibold">Go to Mercedes-Benz-Store</button>
@@ -463,7 +434,7 @@
           <div class="h-full overflow-hidden w-full">
             <img class="lg:h-70 md:h-36 w-full object-cover object-top scale-100 hover:scale-105 transition duration-300" src="images/1762907195039.webp">
             <div class="mt-6">
-              <h1 class="tracking-widest text-2xl title-font text-black mb-2">Service Select</h1>
+              <h1 class="tracking-widest text-2xl title-font text-black mb-2 max-sm:text-xl">Service Select</h1>
               <p class="leading-relaxed text-[15px] font-medium text-black py-3">Enjoy exceptional value on servicing on eligible Mercedes-Benz vehicles six years old or older.</p>
               <div class=" max-sm:block max-sm:w-full mt-8">
                 <button class="px-8 py-3 text-center  text-black max-sm:mt-4  max-sm:ml-0  border-1  border-gray-400 focus:outline-none text-lg font-semibold">Register Now</button> 
@@ -476,7 +447,7 @@
           <div class="h-full overflow-hidden w-full">
             <img class="lg:h-70 md:h-36 w-full object-cover object-top scale-100 hover:scale-105 transition duration-300" src="images/1764204435871.webp">
             <div class="mt-6">
-              <h1 class="tracking-widest text-2xl title-font text-black mb-2">Discover Dashcam</h1>
+              <h1 class="tracking-widest text-2xl title-font text-black mb-2 max-sm:text-xl">Discover Dashcam</h1>
               <p class="leading-relaxed text-[15px] font-medium text-black py-3">Capture each moment in real time, on and off the road with Dashcam <br>by Digital Extras. Maintain a detailed record of every journey, even <br>when your Mercedes-Benz is stationary.</p>
               <div class=" max-sm:block max-sm:w-full mt-8">
                 <button class="px-8 py-3 border-gray-400  text-black max-sm:mt-4  max-sm:ml-0  border-1 py-3 focus:outline-none text-lg font-semibold">Go to Mercedes-Benz-Store</button>
@@ -489,7 +460,7 @@
           <div class="h-full overflow-hidden w-full">
             <img class="lg:h-70 md:h-36 w-full object-cover object-top scale-100 hover:scale-105 transition duration-300" src="images/1762907195128.webp">
             <div class="mt-6">
-              <h1 class="tracking-widest text-2xl title-font text-black mb-2">Breakdown and Damage Assistance</h1>
+              <h1 class="tracking-widest text-2xl title-font text-black mb-2 max-sm:text-xl">Breakdown and Damage Assistance</h1>
               <p class="leading-relaxed text-[15px] font-medium text-black py-3">Whether it's a breakdown, an accident or just a mishap, we'll help you <br>move on smoothly.</p>
               <div class=" max-sm:block max-sm:w-full mt-8">
                 <button class="px-8 py-3 border-gray-400  text-black max-sm:mt-4  max-sm:ml-0  border-1 py-3 focus:outline-none text-lg font-semibold">Learn More</button>
@@ -502,7 +473,7 @@
           <div class="h-full overflow-hidden w-full">
             <img class="lg:h-70 md:h-36 w-full object-cover object-top scale-100 hover:scale-105 transition duration-300" src="images/1762907195312.webp">
             <div class="mt-6">
-              <h1 class="tracking-widest text-2xl title-font text-black mb-2">Mercedes-Benz Accessories & Merchandise Collection</h1>
+              <h1 class="tracking-widest text-2xl title-font text-black mb-2 max-sm:text-xl">Mercedes-Benz Accessories & Merchandise Collection</h1>
               <p class="leading-relaxed text-[15px] font-medium text-black py-3">Quality and design under the sign of the star. Made with passion and <br>attention to detail.</p>
               <div class=" max-sm:block max-sm:w-full mt-8">
                 <button class="px-8 py-3 border-gray-400  text-black max-sm:mt-4  max-sm:ml-0  border-1 py-3 focus:outline-none text-lg font-semibold">Explore Store</button>
@@ -516,7 +487,7 @@
           <div class="h-full overflow-hidden w-full">
             <img class="lg:h-70 md:h-36 w-full object-cover object-top scale-100 hover:scale-105 transition duration-300" src="images/1762907195396.webp">
             <div class="mt-6">
-              <h1 class="tracking-widest text-2xl title-font text-black mb-2">Service Plans</h1>
+              <h1 class="tracking-widest text-2xl title-font text-black mb-2 max-sm:text-xl">Service Plans</h1>
               <p class="leading-relaxed text-[15px] font-medium text-black py-3">Stay carefree with Mercedes-Benz service contracts for service, <br>maintenance and repair.</p>
               <div class=" max-sm:block max-sm:w-full mt-8">
                 <button class="px-8 py-3 border-gray-400  text-black max-sm:mt-4  max-sm:ml-0  border-1 py-3 focus:outline-none text-lg font-semibold">Learn More</button>
@@ -530,7 +501,7 @@
           <div class="h-full overflow-hidden w-full">
             <img class="lg:h-70 md:h-36 w-full object-cover object-top scale-100 hover:scale-105 transition duration-300" src="images/1762907195490.webp">
             <div class="mt-6">
-              <h1 class="tracking-widest text-2xl title-font text-black mb-2">Book a service appointment</h1>
+              <h1 class="tracking-widest text-2xl title-font text-black mb-2 max-sm:text-xl">Book a service appointment</h1>
               <p class="leading-relaxed text-[15px] font-medium text-black py-3">Book a service, maintenance and other repairs easily at a Mercedes-<br>Benz service partner near you.</p>
               <div class=" max-sm:block max-sm:w-full mt-8">
                 <button class="px-8 py-3 border-gray-400  text-black max-sm:mt-4  max-sm:ml-0  border-1 py-3 focus:outline-none text-lg font-semibold">Book a service appointment</button>
@@ -627,11 +598,11 @@
 
 <section class="text-gray-600 body-font">
   <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-    <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+    <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 max-sm:mb-6 md:mb-0 items-center text-center">
       <p class="mb-8 leading-relaxed">About us</p>
-      <h1 class="title-font sm:text-4xl text-6xl mb-4 font-medium text-gray-900 max-sm:2xl">Our location.</h1>
-      <p class="mb-8 leading-relaxed">We invite you to visit our Newcastle dealership at 1 Pacific Highway, Bennetts Green NSW, 2290 <br>to experience the Mercedes-Benz range for yourself.</p>
-      <p class="mb-8 leading-relaxed">Monday to Friday: 8:00am - 5:30pm <br>Saturday: 9:00am - 4:30pm <br>Sunday: Closed</p>
+      <h1 class="title-font text-5xl mb-4 font-medium text-gray-900 max-sm:text-[34px]">Our location.</h1>
+      <p class="mb-8 leading-relaxed max-sm:text-[14px]">We invite you to visit our Newcastle dealership at 1 Pacific Highway, Bennetts Green NSW, 2290 <br>to experience the Mercedes-Benz range for yourself.</p>
+      <p class="mb-8 leading-relaxed max-sm:text-[14px]">Monday to Friday: 8:00am - 5:30pm <br>Saturday: 9:00am - 4:30pm <br>Sunday: Closed</p>
   </div>
 
 </section>
@@ -639,13 +610,13 @@
 <section class="text-gray-600 body-font">
 <div class="relative h-96 w-full">
   
-  <iframe class="mx-auto" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3346.5343322175063!2d151.6896202!3d-32.9896855!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b733d661e08bb0b%3A0x507ee6e211b32374!2sMercedes-Benz%20Newcastle!5e0!3m2!1sen!2sng!4v1765164424729!5m2!1sen!2sng" width="1200" height="800" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="max-sm:w-100px] max-sm:h-[100px]"></iframe>
+  <iframe class="mx-auto max-sm:w-fit max-sm:h-fit" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3346.5343322175063!2d151.6896202!3d-32.9896855!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b733d661e08bb0b%3A0x507ee6e211b32374!2sMercedes-Benz%20Newcastle!5e0!3m2!1sen!2sng!4v1765164424729!5m2!1sen!2sng" width="1100" height="800" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="max-sm:w-[100px] max-sm:h-[100px]"></iframe>
   </div>
   </section>
 
 
   <section class="text-gray-600 body-font w-full h-full">
-    <div class="container px-5 py-24 mx-auto mt-95 max-sm:mx-auto">
+    <div class="container px-5 py-24 mx-auto mt-95 max-sm:mt-[-100px] max-sm:mx-auto">
       <div class="flex flex-wrap -m-4">
         <div class="p-4  lg:w-1/4 max-sm:w-full relative group">
           <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative scale-100 hover:scale-105 transition duration-300">
@@ -666,7 +637,7 @@
         <div class="p-4 lg:w-1/4 max-sm:w-full relative group">
           <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative scale-100 hover:scale-105 transition duration-300">
             <img src="images/icons8-spanner-50.png" class="tracking-widest mb-1 mx-auto">
-            <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3"><Schedule<br> a service</h1>
+            <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Schedule<br> a service</h1>
             <p class="leading-relaxed mb-3">Arrange an<br> appointment the<br> easy way<br></p>
             <div class="absolute bottom-0 left-0 h-1 bg-blue-500 w-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out origin-left"></div>
           </div>
@@ -687,73 +658,101 @@
     <div class="h-full bg-opacity-75 px-8 pt-16 pb-24 overflow-hidden text-center relative bg-black">
       <p class="leading-relaxed mb-3 text-[14px]">[1] Guaranteed Future Value is subject to Fair Wear & Tear return conditions and Excess Kilometre charges calculated at $0.50/km in excess of the agreed annual allowance. [2] Promotional offer valid from 26/11/2025 to 27/01/2026 (UTC+01:00). When you are logged in, you see the promotional price; The offer cannot be combined with any other offer and is only valid for the marked services in the Mercedes-Benz store Australia. A Mercedes-Benz account is required and related terms and conditions for Digital Extra's apply. Features and availability may vary depending on your vehicle’s model, equipment and technical capability. For more detailed information, please refer to the Mercedes-Benz store.</p>
     </div>
-    <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+    <div class="container w-[80%] px-6 py-8 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col border-1 border-gray-200">
+      <div class=" basis-[60%] items-start">
+        <h2 class="pb-2">Stay in touch with us.</h2>
+        <p class="text-[14px]">Sign up for our National newsletter and receive information.</p>
+      </div>
+      <div class=" ml-auto basis-[20%] max-sm:block max-sm:w-full">
+        <button class="w-full text-center text-white max-sm:mt-4  max-sm:ml-0 bg-[#0078d6] border-0 py-3 px-8 focus:outline-none hover:bg-[#368cf7] text-lg font-semibold">Suscribe</button>
+      </div>
+      
+    </div>
+    <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col border-b">
       <div class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
-        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 text-white">CATEGORIES</h2>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4 leading-relaxed">
+          <h2 class="title-font text-gray-900 tracking-widest text-2xl mb-3 text-white">Our Models</h2>
           <nav class="list-none mb-10">
-            <li>
-              <a class="text-gray-600 hover:text-gray-800 text-white">First Link</a>
+            <li class="pt-3">
+              <a class="text-gray-600 hover:text-gray-800 text-white">View All Models</a>
             </li>
-            <li>
-              <a class="text-gray-600 hover:text-gray-800 text-white">Second Link</a>
+            <li class="pt-3">
+              <a class="text-gray-600 hover:text-gray-800 text-white">Book A Test Drive</a>
             </li>
-            <li>
-              <a class="text-gray-600 hover:text-gray-800 text-white">Third Link</a>
+            <li class="pt-3">
+              <a class="text-gray-600 hover:text-gray-800 text-white">Car Configurator</a>
             </li>
-            <li>
-              <a class="text-gray-600 hover:text-gray-800 text-white">Fourth Link</a>
+            <li class="pt-3">
+              <a class="text-gray-600 hover:text-gray-800 text-white">Commercial Vans</a>
             </li>
           </nav>
         </div>
         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 text-white">CATEGORIES</h2>
+          <h2 class="title-font text-gray-900 tracking-widest text-2xl mb-3 text-white">Purchasing A Car</h2>
           <nav class="list-none mb-10">
-            <li>
-              <a class="text-gray-600 hover:text-gray-800 text-white">First Link</a>
+            <li class="pt-3">
+              <a class="text-gray-600 hover:text-gray-800 text-white">National Offers</a>
             </li>
-            <li>
-              <a class="text-gray-600 hover:text-gray-800 text-white">Second Link</a>
+            <li class="pt-3">
+              <a class="text-gray-600 hover:text-gray-800 text-white">Find New Cars</a>
             </li>
-            <li>
-              <a class="text-gray-600 hover:text-gray-800 text-white">Third Link</a>
+            <li class="pt-3">
+              <a class="text-gray-600 hover:text-gray-800 text-white">Find Demonstrator Cars</a>
             </li>
-            <li>
-              <a class="text-gray-600 hover:text-gray-800 text-white">Fourth Link</a>
+            <li class="pt-3">
+              <a class="text-gray-600 hover:text-gray-800 text-white">Find Used Cars</a>
+            </li>
+            <li class="pt-3">
+              <a class="text-gray-600 hover:text-gray-800 text-white">Mercedes-Benz <br>Financial</a>
             </li>
           </nav>
         </div>
         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 text-white">CATEGORIES</h2>
+          <h2 class="title-font text-gray-900 tracking-widest text-2xl mb-3 text-white">Service & Accessories</h2>
           <nav class="list-none mb-10">
-            <li>
-              <a class="text-gray-600 hover:text-gray-800 text-white">First Link</a>
+            <li class="pt-3">
+              <a class="text-gray-600 hover:text-gray-800 text-white">Book A Service</a>
             </li>
-            <li>
-              <a class="text-gray-600 hover:text-gray-800 text-white">Second Link</a>
+            <li class="pt-3">
+              <a class="text-gray-600 hover:text-gray-800 text-white">Maintenance</a>
             </li>
-            <li>
-              <a class="text-gray-600 hover:text-gray-800 text-white">Third Link</a>
+            <li class="pt-3">
+              <a class="text-gray-600 hover:text-gray-800 text-white">Breakdown & Accident <br>Assistance</a>
             </li>
-            <li>
-              <a class="text-gray-600 hover:text-gray-800 text-white">Fourth Link</a>
+            <li class="pt-3">
+              <a class="text-gray-600 hover:text-gray-800 text-white">Autobody Repairs</a>
+            </li>
+            <li class="pt-3">
+              <a class="text-gray-600 hover:text-gray-800 text-white">Genuine Parts</a>
+            </li>
+            <li class="pt-3">
+              <a class="text-gray-600 hover:text-gray-800 text-white">Merchandise Collection <br>Store</a>
+            </li>
+            <li class="pt-3">
+              <a class="text-gray-600 hover:text-gray-800 text-white">Insurance</a>
+            </li>
+            <li class="pt-3">
+              <a class="text-gray-600 hover:text-gray-800 text-white">Owner Manuals</a>
+            </li>
+            <li class="pt-3">
+              <a class="text-gray-600 hover:text-gray-800 text-white">Takata Airbag Recall</a>
             </li>
           </nav>
         </div>
         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3 text-white">CATEGORIES</h2>
+          <h2 class="title-font text-gray-900 tracking-widest text-xl mb-3 text-white">About Us</h2>
           <nav class="list-none mb-10">
-            <li>
-              <a class="text-gray-600 hover:text-gray-800 text-white">First Link</a>
+            <li class="pt-3">
+              <a class="text-gray-600 hover:text-gray-800 text-white">About Us</a>
             </li>
-            <li>
-              <a class="text-gray-600 hover:text-gray-800 text-white">Second Link</a>
+            <li class="pt-3">
+              <a class="text-gray-600 hover:text-gray-800 text-white">Meet The Team</a>
             </li>
-            <li>
-              <a class="text-gray-600 hover:text-gray-800 text-white">Third Link</a>
+            <li class="pt-3">
+              <a class="text-gray-600 hover:text-gray-800 text-white">Our Location</a>
             </li>
-            <li>
-              <a class="text-gray-600 hover:text-gray-800 text-white">Fourth Link</a>
+            <li class="pt-3">
+              <a class="text-gray-600 hover:text-gray-800 text-white">Contact Us</a>
             </li>
           </nav>
         </div>
@@ -761,9 +760,23 @@
     </div>
     <div class="bg-black">
       <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-        <p class="text-gray-500 text-sm text-center sm:text-left">© 2020 Mercedes-Benz —
-          <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@Mercedes</a>
-        </p>
+        <ul class="list-none mb-10 flex flex-row flex-wrap gap-6 max-sm:flex-col max-sm:block max-sm:text-center max-sm:text-[15px]">
+          <li class="pt-3">
+            <a class="text-gray-600 hover:text-gray-800 text-white">MBAuP Privacy Policy</a>
+          </li>
+          <li class="pt-3">
+            <a class="text-gray-600 hover:text-gray-800 text-white">Cookie Policy</a>
+          </li>
+          <li class="pt-3">
+            <a class="text-gray-600 hover:text-gray-800 text-white">Dealer Information</a>
+          </li>
+          <li class="pt-3">
+            <a class="text-gray-600 hover:text-gray-800 text-white">Dealer Privacy Policy</a>
+          </li>
+          <li class="pt-3">
+            <a class="text-gray-600 hover:text-gray-800 text-white">Legal Notice & Terms</a>
+          </li>
+        </ul>
         <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
           <a class="text-gray-500">
             <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
@@ -819,23 +832,6 @@
       }
     }
 
-    let currentPosition = 0; // Tracks how many image widths we've moved
-const imageWrapper = document.getElementById('image-wrapper');
-const imageWidth = 300; // Must match the width set in the CSS .slider-container
-const totalImages = 6; // Total number of images you have
-
-function moveLeft() {
-    // Check if we are at the end of the image list
-    if (currentPosition > -(totalImages - 1) * imageWidth) {
-        currentPosition -= imageWidth; // Move one image width to the left (visually moving images to the right)
-        // Apply the transformation to the wrapper element
-        imageWrapper.style.transform = `translateX(${currentPosition}px)`;
-    } else {
-        // Optional: Reset to the start, or disable the button
-        // currentPosition = 0;
-        // imageWrapper.style.transform = `translateX(${currentPosition}px)`;
-    }
-}
     </script>
 </body>
 </html>
