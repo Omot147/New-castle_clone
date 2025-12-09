@@ -9,35 +9,36 @@
 <body>
     <header class="text-gray-400 bg-[#000000] body-font border-b-1">
         <div class="container mx-auto flex flex-wrap px-14 py-5 flex-col md:flex-row items-center max-sm:relative">
-          <a href="#" class="max-sm:absolute max-sm:top-8 max-sm:left-10 lg:hidden "><img src="images/icons8-menu-bar-50.png" width="20" height="20"></a>
-          <aside class="w-64 bg-white shadow-lg flex-shrink-0 lg:hidden max-sm:hidden">
+          <a href="#" class="max-sm:absolute max-sm:top-8 max-sm:left-10 lg:hidden md:none" onclick="toggleVisibility()"><img src="images/icons8-menu-bar-50.png" width="20" height="20"></a>
+          <aside class="w-64 bg-white shadow-lg flex-shrink-0 lg:hidden md:hiden max-sm:none max-sm:absolute max-sm:top-0 max-sm:z-1 max-sm:left-0 max-sm:h-[100vh]" id="myHiddenText">
             <div class="p-4 text-xl font-semibold text-gray-800 border-b">
-                My App
+                Mercedes-Benz <a href="#" class="max-sm:absolute max-sm:top-6 max-sm:left-54 lg:hidden md:none" onclick="toggleDisplay()"><img src="images/icons8-cancel-50.png" width="20" height="20"></a>
             </div>
-            <nav class="p-4">
+            <nav class="p-4 border-b">
                 <ul class="space-y-2">
                     <li>
                         <a href="#" class="block p-3 text-gray-700 hover:bg-blue-500 hover:text-white rounded-lg transition duration-150">
-                            Dashboard
+                            Models
                         </a>
                     </li>
                     <li>
                         <a href="#" class="block p-3 text-gray-700 hover:bg-blue-500 hover:text-white rounded-lg transition duration-150">
-                            Profile
+                            Buys
                         </a>
                     </li>
                     <li>
                         <a href="#" class="block p-3 text-gray-700 hover:bg-blue-500 hover:text-white rounded-lg transition duration-150">
-                            Settings
+                            Services
                         </a>
                     </li>
                     <li>
                         <a href="#" class="block p-3 text-gray-700 hover:bg-blue-500 hover:text-white rounded-lg transition duration-150">
-                            Help
+                            About us
                         </a>
                     </li>
                 </ul>
             </nav>
+            <p class="text-gray-600 text-[14px] ml-auto opacity-[0.8] text-center pt-4">Provider & Data Privacy</p>
         </aside>
 
           <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0 max-sm:my-auto">
@@ -85,12 +86,12 @@
           <div class="container px-5 mx-auto">
             
             <div class="flex items-center justify-start w-full h-full gap-6 py-4 mx-auto overflow-auto lg:gap-8">
-              <button aria-label="Slide back" type="button" class="absolute left-0 z-30 p-2 ml-10 bg-opacity-50 rounded-full focus:outline-none focus:dark:bg-gray-600 focus:ring-2 focus:ring-offset-2 focus:dark:ring-gray-600 dark:bg-gray-50">
+              <button  onclick="moveLeft()" aria-label="Slide back" type="button" class="absolute left-0 z-30 p-2 ml-10 bg-opacity-50 rounded-full focus:outline-none focus:dark:bg-gray-600 focus:ring-2 focus:ring-offset-2 focus:dark:ring-gray-600 dark:bg-gray-50">
                 <svg width="8" height="14" fill="none" viewBox="0 0 8 14" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4">
                   <path d="M7 1L1 7L7 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg>
               </button>
-              <div class="p-4 md:w-1/3 relative flex flex-shrink-0 w-full sm:w-auto">
+              <div class="p-4 md:w-1/3 relative flex flex-shrink-0 w-full sm:w-auto duration-[0.5s] ease transform w-[600%]" id="image-wrapper">
                 <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                   <img class="lg:h-48 md:h-36 w-full object-cover object-top " src="images\1763613676020.webp" alt="blog">
                   <div class="p-6">
@@ -107,7 +108,7 @@
                   </div>
                 </div>
               </div>
-              <div class="p-4 md:w-1/3 relative flex flex-shrink-0 w-full sm:w-auto">
+              <div class="p-4 md:w-1/3 relative flex flex-shrink-0 w-full sm:w-auto duration-[0.5s] ease transform w-[600%]" id="image-wrapper"">
                 <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                   <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="images\1763681354098.webp" alt="blog">
                   <div class="p-6">
@@ -124,7 +125,7 @@
                   </div>
                 </div>
               </div>
-              <div class="p-4 md:w-1/3 relative flex flex-shrink-0 w-full sm:w-auto">
+              <div class="p-4 md:w-1/3 relative flex flex-shrink-0 w-full sm:w-auto duration-[0.5s] ease transform w-[600%]" id="image-wrapper"">
                 <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                   <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="images\1763682498836.webp" alt="blog">
                   <div class="p-6">
@@ -141,7 +142,7 @@
                   </div>
                 </div>
               </div>
-              <div class="p-4 md:w-1/3 relative flex flex-shrink-0 w-full sm:w-auto">
+              <div class="p-4 md:w-1/3 relative flex flex-shrink-0 w-full sm:w-auto duration-[0.5s] ease transform w-[600%]" id="image-wrapper"">
                 <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                   <img class="lg:h-48 md:h-36 w-full object-cover object-top " src="images\1763613676020.webp" alt="blog">
                   <div class="p-6">
@@ -158,7 +159,7 @@
                   </div>
                 </div>
               </div>
-              <div class="p-4 md:w-1/3 relative flex flex-shrink-0 w-full sm:w-auto">
+              <div class="p-4 md:w-1/3 relative flex flex-shrink-0 w-full sm:w-auto duration-[0.5s] ease transform w-[600%]" id="image-wrapper"">
                 <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                   <img class="lg:h-48 md:h-36 w-full object-cover object-top " src="images\1763613676020.webp" alt="blog">
                   <div class="p-6">
@@ -175,7 +176,7 @@
                   </div>
                 </div>
               </div>
-              <div class="p-4 md:w-1/3 relative flex flex-shrink-0 w-full sm:w-auto">
+              <div class="p-4 md:w-1/3 relative flex flex-shrink-0 w-full sm:w-auto duration-[0.5s] ease transform w-[600%]" id="image-wrapper"">
                 <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                   <img class="lg:h-48 md:h-36 w-full object-cover object-top " src="images\1763613676020.webp" alt="blog">
                   <div class="p-6">
@@ -203,25 +204,28 @@
       <section class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto">
           <div class="flex flex-wrap -m-4">
-            <div class="p-4  lg:w-1/3 max-sm:w-full">
-              <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+            <div class="p-4  lg:w-1/3 max-sm:w-full relative group">
+              <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative scale-100 hover:scale-105 transition duration-300">
                 <img src="images/icons8-steering-wheel-50.png" width="27px" class="tracking-widest mb-1 mx-auto">
                 <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Book a test drive</h1>
                 <p class="leading-relaxed mb-3">Experience and drive a<br>Mercedes-Benz.</p>
+                <div class="absolute bottom-0 left-0 h-1 bg-blue-500 w-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out origin-left"></div>
               </div>
             </div>
-            <div class="p-4 lg:w-1/3 max-sm:w-full">
-              <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+            <div class="p-4 lg:w-1/3 max-sm:w-full relative group">
+              <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative scale-100 hover:scale-105 transition duration-300">
                 <img src="images/icons8-shopping-cart-24.png" class="tracking-widest mb-1 mx-auto">
                 <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Order your new car online</h1>
                 <p class="leading-relaxed mb-3">Take delivery at Mercedes-Benz<br> Newcastle.</p>
+                <div class="absolute bottom-0 left-0 h-1 bg-blue-500 w-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out origin-left"></div>
               </div>
             </div>
-            <div class="p-4 lg:w-1/3 max-sm:w-full">
-              <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+            <div class="p-4 lg:w-1/3 max-sm:w-full relative group">
+              <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative scale-100 hover:scale-105 transition duration-300">
                 <img src="images/icons8-spanner-50.png" width="27px" class="tracking-widest mb-1 mx-auto">
                 <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Schedule a service</h1>
                 <p class="leading-relaxed mb-3">Service your vehicle at your<br>Mercedes-Benz Newcastle.</p>
+                <div class="absolute bottom-0 left-0 h-1 bg-blue-500 w-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out origin-left"></div>
               </div>
             </div>
           </div>
@@ -334,7 +338,7 @@
   <section class="text-gray-600 body-font overflow-hidden">
     <div class="container px-5 py-36 mx-auto">
       <div class="lg:w-4/5 mx-auto flex flex-wrap">
-        <img class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center" src="images/1763613676020.webp">
+        <img class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center scale-100 hover:scale-105 transition duration-300" src="images/1763613676020.webp">
         <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
           <p class="text-sm title-font text-gray-500 tracking-widest">Exclusive to Mercedes-Benz Newcastle</p>
           <h1 class="leading-relaxed text-black text-4xl title-font mt-6">Summer Service at <br>Mercedes-Benz Newcastle</h1>
@@ -358,7 +362,7 @@
             <button class="flex mt-8 text-white border-0 py-4 px-8 focus:outline-none bg-[#0078d6] hover:bg-[#368cf7]">Enquire Now</button>
           </div>
         </div>
-        <img class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center" src="images/1763681354098.webp">
+        <img class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center scale-100 hover:scale-105 transition duration-300" src="images/1763681354098.webp">
         
         </div>
       </div>
@@ -366,7 +370,7 @@
 
     <div class="container px-5 py-36 mx-auto">
       <div class="lg:w-4/5 mx-auto flex flex-wrap">
-        <img class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center" src="images/1764899793612.webp">
+        <img class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center scale-100 hover:scale-105 transition duration-300" src="images/1764899793612.webp">
         <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
           <p class="text-sm title-font text-gray-500 tracking-widest">Exclusive to Mercedes-Benz Newcastle</p>
           <h1 class="leading-relaxed text-black text-4xl title-font mt-6">Electric by Mercedes-Benz.</h1>
@@ -382,7 +386,7 @@
 
     <div class="container px-5 py-36 mx-auto">
       <div class="lg:w-4/5 mx-auto flex flex-wrap">
-        <img class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center" src="images/1739906577109.webp">
+        <img class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center scale-100 hover:scale-105 transition duration-300" src="images/1739906577109.webp">
         <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
           <p class="text-sm title-font text-gray-500 tracking-widest">Certified Pre-Owned</p>
           <h1 class="leading-relaxed text-black text-4xl title-font mt-6">Certified Pre-Owned <br>Vehicles.
@@ -407,7 +411,7 @@
             <button class="flex mt-8 text-white border-0 py-4 px-8 focus:outline-none bg-[#0078d6] hover:bg-[#368cf7]">Shop online</button>
           </div>
         </div>
-        <img class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center" src="images/1739906575968.webp">
+        <img class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center scale-100 hover:scale-105 transition duration-300" src="images/1739906575968.webp">
         
         </div>
       </div>
@@ -415,7 +419,7 @@
 
     <div class="container px-5 py-36 mx-auto">
       <div class="lg:w-4/5 mx-auto flex flex-wrap">
-        <img class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center" src="images/1739906576742.webp">
+        <img class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center scale-100 hover:scale-105 transition duration-300" src="images/1739906576742.webp">
         <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
           <p class="text-sm title-font text-gray-500 tracking-widest">Genuine Parts</p>
           <h1 class="leading-relaxed text-black text-4xl title-font mt-6">Keep your investment at its <br> best.</h1>
@@ -445,7 +449,7 @@
  
         <div class="p-4 md:w-1/3 relative flex flex-shrink-0 w-full sm:w-auto basis-[50%] max-sm:basis-[100%]">
           <div class="h-full overflow-hidden w-full">
-            <img class="lg:h-70 md:h-36 w-full object-cover object-top" src="images/woman.jpg">
+            <img class="lg:h-70 md:h-36 w-full object-cover object-top scale-100 hover:scale-105 transition duration-300" src="images/woman.jpg">
             <div class="mt-6">
               <h1 class="tracking-widest text-2xl title-font text-black mb-2">Innovation, made effortless</h1>
               <p class="leading-relaxed text-[15px] font-medium text-black py-3">Connect your Mercedes-Benz with your lifestyle for effortless, <br>refined drives. Elevate your experience with 15%[2] off the Digital <br>Extras Excellence Package.</p>
@@ -457,7 +461,7 @@
         </div>
         <div class="p-4 md:w-1/3 relative flex flex-shrink-0 w-full sm:w-auto basis-[50%] max-sm:basis-[100%]">
           <div class="h-full overflow-hidden w-full">
-            <img class="lg:h-70 md:h-36 w-full object-cover object-top" src="images/1762907195039.webp">
+            <img class="lg:h-70 md:h-36 w-full object-cover object-top scale-100 hover:scale-105 transition duration-300" src="images/1762907195039.webp">
             <div class="mt-6">
               <h1 class="tracking-widest text-2xl title-font text-black mb-2">Service Select</h1>
               <p class="leading-relaxed text-[15px] font-medium text-black py-3">Enjoy exceptional value on servicing on eligible Mercedes-Benz vehicles six years old or older.</p>
@@ -470,7 +474,7 @@
 
         <div class="p-4 md:w-1/3 relative flex flex-shrink-0 w-full sm:w-auto basis-[50%] max-sm:basis-[100%]">
           <div class="h-full overflow-hidden w-full">
-            <img class="lg:h-70 md:h-36 w-full object-cover object-top" src="images/1764204435871.webp">
+            <img class="lg:h-70 md:h-36 w-full object-cover object-top scale-100 hover:scale-105 transition duration-300" src="images/1764204435871.webp">
             <div class="mt-6">
               <h1 class="tracking-widest text-2xl title-font text-black mb-2">Discover Dashcam</h1>
               <p class="leading-relaxed text-[15px] font-medium text-black py-3">Capture each moment in real time, on and off the road with Dashcam <br>by Digital Extras. Maintain a detailed record of every journey, even <br>when your Mercedes-Benz is stationary.</p>
@@ -483,7 +487,7 @@
 
         <div class="p-4 md:w-1/3 relative flex flex-shrink-0 w-full sm:w-auto basis-[50%] max-sm:basis-[100%]">
           <div class="h-full overflow-hidden w-full">
-            <img class="lg:h-70 md:h-36 w-full object-cover object-top" src="images/1762907195128.webp">
+            <img class="lg:h-70 md:h-36 w-full object-cover object-top scale-100 hover:scale-105 transition duration-300" src="images/1762907195128.webp">
             <div class="mt-6">
               <h1 class="tracking-widest text-2xl title-font text-black mb-2">Breakdown and Damage Assistance</h1>
               <p class="leading-relaxed text-[15px] font-medium text-black py-3">Whether it's a breakdown, an accident or just a mishap, we'll help you <br>move on smoothly.</p>
@@ -496,7 +500,7 @@
 
         <div class="p-4 md:w-1/3 relative flex flex-shrink-0 w-full sm:w-auto basis-[50%] max-sm:basis-[100%]">
           <div class="h-full overflow-hidden w-full">
-            <img class="lg:h-70 md:h-36 w-full object-cover object-top" src="images/1762907195312.webp">
+            <img class="lg:h-70 md:h-36 w-full object-cover object-top scale-100 hover:scale-105 transition duration-300" src="images/1762907195312.webp">
             <div class="mt-6">
               <h1 class="tracking-widest text-2xl title-font text-black mb-2">Mercedes-Benz Accessories & Merchandise Collection</h1>
               <p class="leading-relaxed text-[15px] font-medium text-black py-3">Quality and design under the sign of the star. Made with passion and <br>attention to detail.</p>
@@ -510,7 +514,7 @@
         
         <div class="p-4 md:w-1/3 relative flex flex-shrink-0 w-full sm:w-auto basis-[50%] max-sm:basis-[100%]">
           <div class="h-full overflow-hidden w-full">
-            <img class="lg:h-70 md:h-36 w-full object-cover object-top" src="images/1762907195396.webp">
+            <img class="lg:h-70 md:h-36 w-full object-cover object-top scale-100 hover:scale-105 transition duration-300" src="images/1762907195396.webp">
             <div class="mt-6">
               <h1 class="tracking-widest text-2xl title-font text-black mb-2">Service Plans</h1>
               <p class="leading-relaxed text-[15px] font-medium text-black py-3">Stay carefree with Mercedes-Benz service contracts for service, <br>maintenance and repair.</p>
@@ -524,7 +528,7 @@
         
         <div class="p-4 md:w-1/3 relative flex flex-shrink-0 w-full sm:w-auto basis-[50%] max-sm:basis-[100%]">
           <div class="h-full overflow-hidden w-full">
-            <img class="lg:h-70 md:h-36 w-full object-cover object-top" src="images/1762907195490.webp">
+            <img class="lg:h-70 md:h-36 w-full object-cover object-top scale-100 hover:scale-105 transition duration-300" src="images/1762907195490.webp">
             <div class="mt-6">
               <h1 class="tracking-widest text-2xl title-font text-black mb-2">Book a service appointment</h1>
               <p class="leading-relaxed text-[15px] font-medium text-black py-3">Book a service, maintenance and other repairs easily at a Mercedes-<br>Benz service partner near you.</p>
@@ -643,32 +647,36 @@
   <section class="text-gray-600 body-font w-full h-full">
     <div class="container px-5 py-24 mx-auto mt-95 max-sm:mx-auto">
       <div class="flex flex-wrap -m-4">
-        <div class="p-4  lg:w-1/4 max-sm:w-full ">
-          <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+        <div class="p-4  lg:w-1/4 max-sm:w-full relative group">
+          <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative scale-100 hover:scale-105 transition duration-300">
             <img src="images/icons8-mail-50.png" width="27px" class="tracking-widest mb-1 mx-auto">
             <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Contact Us</h1> 
             <p class="leading-relaxed mb-3">Get in touch with<br> the Mercedes-Benz<br> team.</p>
+            <div class="absolute bottom-0 left-0 h-1 bg-blue-500 w-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out origin-left"></div>
           </div>
         </div>
-        <div class="p-4 lg:w-1/4 max-sm:w-full">
-          <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+        <div class="p-4 lg:w-1/4 max-sm:w-full relative group">
+          <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative scale-100 hover:scale-105 transition duration-300">
             <img src="images/icons8-gear-24.png" class="tracking-widest mb-1 mx-auto">
             <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Configurator</h1>
             <p class="leading-relaxed mb-3">Build and Price<br> your dream vehicle.</p>
+            <div class="absolute bottom-0 left-0 h-1 bg-blue-500 w-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out origin-left"></div>
           </div>
         </div>
-        <div class="p-4 lg:w-1/4 max-sm:w-full">
-          <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+        <div class="p-4 lg:w-1/4 max-sm:w-full relative group">
+          <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative scale-100 hover:scale-105 transition duration-300">
             <img src="images/icons8-spanner-50.png" class="tracking-widest mb-1 mx-auto">
             <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3"><Schedule<br> a service</h1>
             <p class="leading-relaxed mb-3">Arrange an<br> appointment the<br> easy way<br></p>
+            <div class="absolute bottom-0 left-0 h-1 bg-blue-500 w-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out origin-left"></div>
           </div>
         </div>
-        <div class="p-4 lg:w-1/4 max-sm:w-full">
-          <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+        <div class="p-4 lg:w-1/4 max-sm:w-full relative group">
+          <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative scale-100 hover:scale-105 transition duration-300">
             <img src="images/icons8-steering-wheel-50.png" width="20px" class="tracking-widest mb-1 mx-auto">
             <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Experience<br> & drive</h1>
             <p class="leading-relaxed mb-3">Book a test drive<br> today.</p>
+            <div class="absolute bottom-0 left-0 h-1 bg-blue-500 w-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out origin-left"></div>
           </div>
         </div>
       </div>
@@ -783,7 +791,51 @@
       </div>
     </div>
   </footer>
+    
 
-<script></script>
+  <script>
+     var content = document.getElementById("myHiddenText");
+    function toggleVisibility() {
+      
+      // Check the current display style
+      if (content.style.display === "none") {
+        // If hidden, show it (e.g., as a block element)
+        content.style.display = "block";
+      } else {
+        // If visible, hide it
+        content.style.display = "none";
+      }
+    }
+
+    function toggleDisplay() {
+      
+      // Check the current display style
+      if (content.style.display === "block") {
+        // If hidden, show it (e.g., as a block element)
+        content.style.display = "none";
+      } else {
+        // If visible, hide it
+        content.style.display = "block";
+      }
+    }
+
+    let currentPosition = 0; // Tracks how many image widths we've moved
+const imageWrapper = document.getElementById('image-wrapper');
+const imageWidth = 300; // Must match the width set in the CSS .slider-container
+const totalImages = 6; // Total number of images you have
+
+function moveLeft() {
+    // Check if we are at the end of the image list
+    if (currentPosition > -(totalImages - 1) * imageWidth) {
+        currentPosition -= imageWidth; // Move one image width to the left (visually moving images to the right)
+        // Apply the transformation to the wrapper element
+        imageWrapper.style.transform = `translateX(${currentPosition}px)`;
+    } else {
+        // Optional: Reset to the start, or disable the button
+        // currentPosition = 0;
+        // imageWrapper.style.transform = `translateX(${currentPosition}px)`;
+    }
+}
+    </script>
 </body>
 </html>
